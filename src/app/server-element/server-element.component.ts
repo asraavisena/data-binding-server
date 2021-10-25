@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./server-element.component.css']
 })
 export class ServerElementComponent implements OnInit {
-  // ! @Input() binding property -> memakai aliases
+  // ! @Input() binding property -> memakai aliases -> bindable from outside
   @Input('srvElement') element: {type: string, name: string, content: string};
 
   constructor() { }
